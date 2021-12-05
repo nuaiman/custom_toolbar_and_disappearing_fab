@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
 
       if (offSet < defaultMargin - defaultStart) {
         scale = 1;
-      } else if (offSet < defaultStart - defaultMargin) {
+      } else if (offSet < defaultMargin - defaultEnd) {
         scale = (defaultMargin - defaultEnd - offSet) / defaultEnd;
       } else {
         scale = 0;
